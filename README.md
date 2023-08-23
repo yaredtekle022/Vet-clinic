@@ -64,7 +64,9 @@ Vet-clinic is a database that has animals information
 Features
 
 ### Key Features <a name="key-features"></a>
-- **[Write-sql-queries-to-retrieve-data-form-database]**
+- **[AnimalsTable]**
+**[Add Animals]**
+**[Query animals]**
 
 <!-- GETTING STARTED -->
 
@@ -83,6 +85,7 @@ In order to run this project you need postgresql<br>
 
  brew install postgresql<br>
  brew services start postgresql<br>
+ psql postgres<br>
 
 ### Setup
 
@@ -99,7 +102,7 @@ Clone this repository to your desired folder:
 Install this project with:<br>
   brew install postgresql<br>>
   brew services start postgresql<br>
-  psql vet_clinic
+  psql postgres
 
 
 ### Usage
@@ -121,7 +124,7 @@ To run the project, execute the following command:<br>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
+**[Intergrate db to front end]**<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,5 +184,13 @@ I would like to express my sincere gratitude to <br><br>
 
  PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
   It can be downloaded [here](https://https://www.postgresql.org/download/): <br>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
