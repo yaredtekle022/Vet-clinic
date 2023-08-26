@@ -160,7 +160,6 @@ Thank you for taking the time to explore this project! Your support means a lot 
 I would like to express my sincere gratitude to <br><br>
 1, [Microverse](https://github.com/microverseinc), the dedicated reviewers, and collaborators. Your unwavering support, feedback, and collaborative efforts have played an immense role in making this journey a resounding success. I am truly grateful for your contributions and for being an integral part of my achievements. Thank you for your continued support.
 <br><br>
-2, I'd also like to thank [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
