@@ -12,24 +12,25 @@ SELECT * FROM animals WHERE weight_kg >= 10.4 AND weight_kg <= 17.3;
 BEGIN;
 UPDATE animals SET species = 'unspecified';
 ROLLBACK;
+SELECT species from animals;
 
 BEGIN;
 UPDATE animals
 SET species = 'digimon'
 WHERE name LIKE '%mon';
-COMMIT;
-
-BEGIN;
 
 UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL;
+SELECT species from animals;
 COMMIT;
 
 BEGIN;
-DELETE FROM animals;
+DELETE FROM animals WHERE ;
+SELECT COUNT(*) FROM ANIMALS;
 
 ROLLBACK;
+SELECT COUNT(*) FROM ANIMALS;
 
 
 BEGIN;
@@ -39,17 +40,10 @@ COMMIT;
 
 BEGIN;
 SAVEPOINT transaction_savepoint;
-DELETE FROM animals
-WHERE date_of_birth > '2022-01-01';
-COMMIT;
 
-
-BEGIN;
 UPDATE animals
 SET weight_kg = weight_kg * -1;
-COMMIT;
-
-ROLLBACK TO SAVEPOINT transaction_savepoint;
+ROLLBACK TO  transaction_savepoint;
 COMMIT;
 
 BEGIN;
@@ -71,7 +65,6 @@ SELECT species, MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
 FROM animals
 GROUP BY species;
 
-SELECT species, AVG(escape_attempts) AS avg_escape_attempts
-FROM animals
-WHERE date_of_birth BETWEEN '1989-12-31' AND '2000-12-30' 
-GROUP BY species;
+SELECT species, AVG(escape_attempts) FROM animals
+GROUP BY species
+WHERE  date_of_birth >= '1990/01/01' AND date_of_birth <= '2000/12/31';
