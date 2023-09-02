@@ -77,6 +77,7 @@ VALUES
    -- insert into visits table
 INSERT INTO visits (animal_id, vet_id, visit_date)
 VALUES
+    
     (2, 4, '2021-02-02');
     (3, 2, '2020-01-05'),
     (3, 2, '2020-03-08'),
